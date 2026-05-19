@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/CerrarSesionServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/editarMedicamento.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/EditarMedicamentoServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/panelMedico.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/modelo/Medicamento.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/AgregarCarritoServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/modelo/Usuario.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/index.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/sueno.html</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/carrito.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/GuardarMedicamentoServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/GuardarPacienteServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/articulos.html</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/inventarioAlmacen.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/EliminarMedicamentoServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/modelo/Paciente.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/RegisterServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/css/medico.css</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/ProcesarRecetaServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/agendaDoctor.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/modelo/Receta.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/ProcesarCompraServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/css/admin.css</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/Conexion.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/controlador/LoginServlet.java</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/web/panelAdmin.jsp</file>
+            <file>file:/C:/Users/mongd/OneDrive/Desktop/Proyecto_cambios/src/java/modelo/MedicamentoDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

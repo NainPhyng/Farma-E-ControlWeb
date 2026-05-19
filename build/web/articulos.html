@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos | Farma E-Control</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/indexart.css">
+    <link rel="stylesheet" href="css/diseño.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Farma E-Control" style="width: 60px; height: 60px;">
+
+            <div>
+                <div>FARMA</div>
+                <div style="font-size: 10px;">E-CONTROL</div>
+            </div>
+        </a>
+
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="🔍">
+        </div>
+
+        <div class="header-icons">
+
+            <a href="sucursales.html" class="icon-item">
+                <img src="img/sucursales.png" alt="Sucursales">
+                Sucursales
+            </a>
+
+            <a href="miCuenta.jsp" class="icon-item">
+                <img src="img/micuenta.png" alt="Mi cuenta">
+                Mi cuenta
+            </a>
+
+            <a href="carrito.html" class="icon-item">
+                <img src="img/carrito.png" alt="Mi carrito">
+                Mi carrito
+            </a>
+
+            <a href="facturas.html" class="icon-item">
+                <img src="img/facturas.png" alt="Facturas">
+                Facturas
+            </a>
+
+            <a href="membresias.html" class="icon-item">
+                <img src="img/membresias.png" alt="Membresías">
+                Membresías
+            </a>
+
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav">
+
+        <div class="menu-categorias">
+
+            <button class="cat-btn" onclick="toggleMenu()">
+                Categorías ▼
+            </button>
+
+            <!-- MENÚ -->
+            <div id="menu-azul" class="menu-azul">
+
+                <div class="cat-item" onclick="mostrarSubmenu('medicamentos')">
+                    Medicamentos <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('equipo')">
+                    Equipo y botiquín <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('vitaminas')">
+                    Vitaminas y suplementos <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('dermocosmeticos')">
+                    Dermocosméticos <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('cuidado')">
+                    Cuidado personal y belleza <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('bebes')">
+                    Bebés <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('alimentos')">
+                    Alimentos y bebidas <span class="arrow">▶</span>
+                </div>
+
+                <div class="cat-item" onclick="mostrarSubmenu('salud')">
+                    Salud sexual <span class="arrow">▶</span>
+                </div>
+
+            </div>
+
+            <!-- SUBMENÚ -->
+            <div id="submenu" class="submenu-panel"></div>
+
+        </div>
+
+        <!-- BOTONES -->
+        <div class="ofertas">
+            <a href="ofertas.html" class="ofe-btn">OFERTAS</a>
+        </div>
+
+        <div class="articulos">
+            <a href="articulos.html" class="ofe-btn">ARTÍCULOS</a>
+        </div>
+
+    </div>
+
+    <!-- HERO -->
+    <div class="articles-hero">
+
+        <h1>Artículos Disponibles</h1>
+
+        <p>
+            Explora contenido creado para tu salud, bienestar y estilo de vida.
+        </p>
+
+    </div>
+
+    <!-- BLOG -->
+    <div class="blog-section">
+
+        <div class="blog-grid">
+
+            <!-- CARD 1 -->
+            <div class="blog-card">
+
+                <div class="blog-image">
+                    <img src="img/rutinaSueno.png" alt="Rutina de sueño">
+                </div>
+
+                <div class="blog-title">
+                    ¿Cómo crear una buena rutina del sueño para ti?
+                </div>
+
+                <p class="blog-extract">
+                    Aprende a crear un hábito de descanso realmente saludable.
+                </p>
+
+                <a href="sueno.html" class="blog-link">
+                    Leer más...
+                </a>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="blog-card">
+
+                <div class="blog-image">
+                    <img src="img/sistemainmune.png" alt="Sistema inmune">
+                </div>
+
+                <div class="blog-title">
+                    ¿Cómo reforzar tu sistema inmune por el cambio de temperaturas?
+                </div>
+
+                <p class="blog-extract">
+                    Consejos prácticos para fortalecer tus defensas.
+                </p>
+
+                <a href="inmune.html" class="blog-link">
+                    Leer más...
+                </a>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="blog-card">
+
+                <div class="blog-image">
+                    <img src="img/saludmental.png" alt="Salud mental">
+                </div>
+
+                <div class="blog-title">
+                    ¿Cómo cuidar la salud mental? Estrategias según la edad
+                </div>
+
+                <p class="blog-extract">
+                    Guía clara y útil para cada etapa de la vida.
+                </p>
+
+                <a href="saludmental.html" class="blog-link">
+                    Leer más...
+                </a>
+
+            </div>
+
+            <!-- EXTRA -->
+            <div class="blog-card">
+
+                <div class="blog-image empty">
+                    Próximamente
+                </div>
+
+                <div class="blog-title">
+                    Título del siguiente artículo
+                </div>
+
+                <p class="blog-extract">
+                    Descripción breve aquí…
+                </p>
+
+                <a href="#" class="blog-link disabled">
+                    Disponible pronto
+                </a>
+
+            </div>
+
+            <div class="blog-card">
+
+                <div class="blog-image empty">
+                    Próximamente
+                </div>
+
+                <div class="blog-title">
+                    Título del siguiente artículo
+                </div>
+
+                <p class="blog-extract">
+                    Descripción breve aquí…
+                </p>
+
+                <a href="#" class="blog-link disabled">
+                    Disponible pronto
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("menu-azul");
+            const submenu = document.getElementById("submenu");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+                submenu.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+
+            }
+        }
+
+        function mostrarSubmenu(tipo) {
+
+            const submenu = document.getElementById("submenu");
+
+            let contenido = "";
+
+            if (tipo === "medicamentos") {
+
+                contenido = `
+                    <h2>Medicamentos</h2>
+
+                    <div class="submenu-col">
+                        <h3>Antimicrobianos</h3>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Antibióticos orales
+                        </a>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Antibióticos tópicos
+                        </a>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Antifúngicos
+                        </a>
+                    </div>
+                `;
+
+            }
+
+            else if (tipo === "equipo") {
+
+                contenido = `
+                    <h2>Equipo y botiquín</h2>
+
+                    <div class="submenu-col">
+
+                        <h3>Aparatos</h3>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Baumanómetros
+                        </a>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Glucómetros
+                        </a>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Oxímetros
+                        </a>
+
+                    </div>
+                `;
+            }
+
+            else if (tipo === "vitaminas") {
+
+                contenido = `
+                    <h2>Vitaminas y suplementos</h2>
+
+                    <div class="submenu-col">
+
+                        <h3>Vitaminas</h3>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Vitamina C
+                        </a>
+
+                        <a class="submenu-link" href="categorias.jsp">
+                            Vitamina D
+                        </a>
+
+                    </div>
+                `;
+            }
+
+            else {
+
+                contenido = `
+                    <h2>Categoría</h2>
+
+                    <div class="submenu-col">
+
+                        <p>Contenido no disponible.</p>
+
+                    </div>
+                `;
+            }
+
+            submenu.innerHTML = contenido;
+            submenu.style.display = "block";
+        }
+
+        // Cerrar menú al hacer clic afuera
+        document.addEventListener("click", function(event) {
+
+            const menu = document.getElementById("menu-azul");
+            const submenu = document.getElementById("submenu");
+            const boton = document.querySelector(".cat-btn");
+
+            if (
+                !menu.contains(event.target) &&
+                !submenu.contains(event.target) &&
+                !boton.contains(event.target)
+            ) {
+
+                menu.style.display = "none";
+                submenu.style.display = "none";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

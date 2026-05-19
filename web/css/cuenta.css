@@ -1,0 +1,209 @@
+/* ========= FUENTE ========= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ------------ GENERAL ------------ */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: radial-gradient(circle at top left, #e3f2fd, #f4f6fb);
+}
+
+/* Contenedor centrado */
+.auth-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tarjeta del formulario */
+.auth-card{
+    width: 100%;
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(21,101,192,0.15);
+    text-align: center;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(21,101,192,0.1);
+    animation: aparecer .6s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(15px) scale(.98);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.auth-card h2{
+    margin-bottom: 25px;
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+/* Inputs */
+.auth-card input{
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #c5dfff;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background: #f9fbff;
+}
+
+.auth-card input:focus{
+    border-color: #1565c0;
+    box-shadow: 0 0 0 3px rgba(21,101,192,0.15);
+}
+
+/* Botón */
+.auth-card button{
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    letter-spacing: .5px;
+}
+
+.auth-card button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(21,101,192,0.4);
+}
+
+/* Links de cambiar entre login y registro */
+.auth-link{
+    margin-top: 16px;
+    display: block;
+    font-size: 14px;
+    color: #1565c0;
+    text-decoration: none;
+}
+
+.auth-link:hover{
+    text-decoration: underline;
+}
+
+/* ------------ MI CUENTA ------------ */
+
+.account-container{
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 30px;
+    background: linear-gradient(180deg, #ffffff, #f8fbff);
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(21,101,192,0.12);
+    animation: aparecer .6s ease;
+}
+
+.account-header{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #e3f2fd;
+    padding-bottom: 25px;
+}
+
+/* Imagen de perfil */
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(21,101,192,.4);
+}
+
+/* Info usuario */
+.account-info h3{
+    margin: 0;
+    color: #0d47a1;
+    font-size: 24px;
+}
+
+.account-info p{
+    margin: 6px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Opciones */
+.account-options{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.option-box{
+    padding: 22px;
+    border-radius: 18px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    background: white;
+    border: 1px solid #e3f2fd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    color: #1565c0;
+}
+
+.option-box:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(21,101,192,0.2);
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    color: white;
+}
+
+/* Botón logout */
+.logout-btn{
+    margin-top: 35px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #e53935, #c62828);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: .5px;
+}
+
+.logout-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(229,57,53,0.5);
+}
+
+/* Responsive extra */
+@media (max-width: 600px){
+    .account-header{
+        flex-direction: column;
+        text-align: center;
+    }
+}

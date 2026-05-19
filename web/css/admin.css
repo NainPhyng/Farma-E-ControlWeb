@@ -1,0 +1,255 @@
+/* admin.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h3 {
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e1e4e8;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos del Formulario */
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3182ce;
+}
+
+/* Botones con el estilo de tu programa */
+button[type="submit"] {
+    width: 100%;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2c5282;
+}
+
+.btn-logout {
+    width: 100%;
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #c53030;
+}
+
+/* Alertas de éxito o error */
+.alert {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.alert-success {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+.alert-error {
+    background-color: #fed7d7;
+    color: #742a2a;
+}
+
+/* --- Estilos para la Tabla de Inventario --- */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #f7fafc;
+    color: #4a5568;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+table td {
+    padding: 12px 15px;
+    color: #2d3748;
+    border-bottom: 1px solid #edf2f7;
+    background-color: #ffffff;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Etiquetas (Badges) de Stock */
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.badge-ok {
+    background-color: #e6fffa;
+    color: #234e52;
+}
+.badge-low {
+    background-color: #fff5f5;
+    color: #742a2a;
+}
+
+/* Botones de acción rápidos dentro de la tabla */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-action {
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-edit {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+}
+.btn-edit:hover {
+    background-color: #bee3f8;
+}
+
+.btn-delete {
+    background-color: #fff5f5;
+    color: #c53030;
+}
+.btn-delete:hover {
+    background-color: #fed7d7;
+}
+/* --- Botones del Módulo de Reportes --- */
+.btn-reporte {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
+}
+
+.btn-reporte:active {
+    transform: scale(0.98);
+}
+
+.btn-rep-todos {
+    background-color: #edf2f7;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+}
+.btn-rep-todos:hover {
+    background-color: #e2e8f0;
+}
+
+.btn-rep-alerta {
+    background-color: #fff5f5;
+    color: #c53030;
+    border: 1px solid #feb2b2;
+}
+.btn-rep-alerta:hover {
+    background-color: #fed7d7;
+}
+
+.btn-rep-premium {
+    background-color: #f0fff4;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+.btn-rep-premium:hover {
+    background-color: #c6f6d5;
+}
